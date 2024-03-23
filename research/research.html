@@ -10,13 +10,85 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/shared_syles.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+		<style>
+			
 
+			.top-container {
+			background-color: #f1f1f1;
+			padding: 30px;
+			text-align: center;
+			}
+
+			.header {
+			padding: 10px 16px;
+			z-index: 9999;
+
+			
+			}
+			.header nav {
+			}
+			.header nav ul  {
+				
+			}
+			
+			.header nav ul li {
+				background-color: black;
+				opacity: 0.25;
+			}
+			.header nav ul li a {
+				color: white;
+			}
+
+			.divided {
+			padding: 0px;
+			}
+			.sticky {
+				
+			position: fixed;
+			top: 0;
+			width: 100%;
+		  }
+		  .sticky + .divided {
+			
+			padding-top: 80px;
+		  }
+			</style>
+		
+
+
+
+
+		
+
+
+		<div class="header" id="myHeader">
+			<header id="header">
+				<nav>
+					<ul>
+						<!--<li><a href="#intro">Intro</a></li>-->
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="/research/research.html">Research</a></li>
+						<li><a href="/index.html#about">About</a></li>
+						<li><a href="/index.html#publications">Publications</a></li>
+						<li><a href="/index.html#gallery">Gallery</a></li>
+						<li><a href="/index.html#contact">Contact</a></li>
+						<!--<li><a href="#elements">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+		</div>
+		
+
+		<!-- Wrapper -->
+		
+		  
+			<div id="wrapper" class="divided">
+				
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
@@ -339,6 +411,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			
+			<script>
+				window.onscroll = function() {myFunction()};
+				
+				var header = document.getElementById("myHeader");
+				var sticky = header.offsetTop;
+				
+				function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+				}
+				</script>
 
 	</body>
 </html>
