@@ -18,7 +18,7 @@
 		<style>
 			
 
-			.top-container {
+			#top-container {
 			background-color: #f1f1f1;
 			padding: 30px;
 			text-align: center;
@@ -27,36 +27,38 @@
 			.header {
 			padding: 10px 16px;
 			z-index: 9999;
+			}
 
+			#header nav {
+			}
+
+			#header nav ul  {
+				border: solid 1px black;
+			}
 			
+			#header nav ul li {
+				border-left: solid 1px black;
+				background-color: rgb(0,0,0,.7);
 			}
-			.header nav {
-			}
-			.header nav ul  {
-				
-			}
-			
-			.header nav ul li {
-				background-color: black;
-				opacity: 0.25;
-			}
-			.header nav ul li a {
+
+			#header nav ul li a {
 				color: white;
 			}
 
 			.divided {
 			padding: 0px;
 			}
+
 			.sticky {
-				
 			position: fixed;
 			top: 0;
 			width: 100%;
-		  }
+		  	}
+
 		  .sticky + .divided {
-			
 			padding-top: 80px;
-		  }
+		  	}
+
 			</style>
 		
 
@@ -68,6 +70,7 @@
 
 		<div class="header" id="myHeader">
 			<header id="header">
+				
 				<nav>
 					<ul>
 						<!--<li><a href="#intro">Intro</a></li>-->
