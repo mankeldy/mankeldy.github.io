@@ -1,24 +1,10 @@
-Dimension by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+This is my personal website at [mankeldy.github.io](https://mankeldy.github.io)
 
-
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
+I try to update it every once in a while with new photos and the research I'm working on, but sorry in advance if anything is out of date! Feel free to contact me if there's anything you would like to chat about.
 
 Credits:
-
+	Template: Dimension by HTML5 UP (html5up.net)
+	
 	Demo Images:
 		Unsplash (unsplash.com)
 
