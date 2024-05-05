@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/shared_syles.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />>
+		<link rel="stylesheet" href="/leaflet/leaflet.css" />
+		<script src="/leaflet/leaflet.js"></script>
+		
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -82,6 +85,7 @@
 
 						<!-- About -->
 						<article id="publications" style="width:1200px">
+							
 							<h2 class="major">Publications</h2>
 							<!--<span class="image right"><img src="images/basque lakes profile.jpg" alt="" /></span>-->
 							<ol> 
@@ -121,6 +125,52 @@
 
 
 							</ol>
+
+							<h2 class="major">Posters</h2>
+							AbSciCon 2024
+
+							<body class>
+								
+								<div id="map" style="width: 1200; height: 400px;" ></div>
+
+								<script>
+									// Using leaflet.js to pan and zoom a big image.
+									var map = L.map('map', {
+									minZoom: 0,
+									maxZoom: 4,
+									center: [0, 0],
+									zoom: 0, //start zoom at 1
+									maxBoundsViscosity: 1,
+									zoomSnap:1,
+									zoomDelta:1,
+									crs: L.CRS.Simple,
+									wheelPxPerZoomLevel: 60,
+
+									});
+
+									
+									//zoom 4 full size image is 4608px * 3456 px
+									//zoom 3 2304 * 1728
+									//zoom 2 1152 * 864
+									//zoom 1 576 * 432
+								
+									var image= L.imageOverlay("/images/posters/2024 AbSciCon Poster v2.png", [[0,0],[360,480]]); //initial size at zoom 1 )
+									image.addTo(map);
+									// tell leaflet that the map is exactly as big as the image
+									map.setMaxBounds(new L.LatLngBounds([0,0], [360,480]));  // prevent panning outside the image area.
+									//Note the viscosity setting keeps the image from being dragged outside this 
+																			
+								</script>
+									
+
+
+
+
+							</body>
+
+							
+
+
 						</article>
 				
 
