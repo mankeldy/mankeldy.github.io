@@ -5207,7 +5207,7 @@ input, select, textarea {
 				-ms-object-position: center;
 				object-position: center;
 				display: block;
-				position: absolute;
+				position: relative;
 				top: 0;
 				left: 0;
 				width: 100%;
@@ -5221,9 +5221,7 @@ input, select, textarea {
 				padding: 5rem 5rem 3rem 5rem ;
 			}
 			
-			.spotlight.style1 .image img {
-				position: relative;
-			}
+
 
 		}
 
@@ -5233,9 +5231,7 @@ input, select, textarea {
 				padding: 4rem 4rem 2rem 4rem ;
 			}
 			
-			.spotlight.style1 .image img {
-				position: relative;
-			}
+
 
 		}
 
@@ -5252,9 +5248,6 @@ input, select, textarea {
 				min-width: 0;
 			}
 			
-			.spotlight.style1 .image img {
-				position: relative;
-			}
 
 		}
 
@@ -5284,9 +5277,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				.spotlight.style1 .image img {
-					position: relative;
-				}
+
 
 	}
 
