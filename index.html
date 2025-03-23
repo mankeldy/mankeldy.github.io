@@ -4,8 +4,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 	<head>
+		<!-- Google Tracking-->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRT3GTBPZR"></script>
 		<script>
   			window.dataLayer = window.dataLayer || [];
@@ -14,7 +15,8 @@
 
  			gtag('config', 'G-QRT3GTBPZR');
 		</script>
-		
+		<!---->
+
 		<title>Dylan's Personal Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -23,8 +25,58 @@
 		<link rel="stylesheet" href="/leaflet/leaflet.css" />
 		<script src="/leaflet/leaflet.js"></script>
 		
+
+
+		<link rel="stylesheet"  href="/lightslider-master/lightslider-master/src/css/lightslider.css"/>
+		<style>
+			ul{
+				list-style: none outside none;
+				padding-left: 0;
+				margin: 0;
+			}
+			.demo .item{
+				margin-bottom: 60px;
+			}
+			.content-slider li{
+				background-color: #ed3020;
+				text-align: center;
+				color: #FFF;
+			}
+			.content-slider h3 {
+				margin: 0;
+				padding: 70px 0;
+			}
+			.demo{
+				width: 800px;
+			}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="/lightslider-master/lightslider-master/src/js/lightslider.js"></script> 
+		<script>
+			 $(document).ready(function() {
+				$("#content-slider").lightSlider({
+					loop:true,
+					keyPress:true
+				});
+				$('#image-gallery').lightSlider({
+					gallery:true,
+					item:1,
+					thumbItem:9,
+					slideMargin: 0,
+					speed:500,
+					auto:true,
+					loop:true,
+					onSliderLoad: function() {
+						$('#image-gallery').removeClass('cS-hidden');
+					}  
+				});
+			});
+		</script>
+
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -173,7 +225,7 @@
 									//zoom 2 1152 * 864
 									//zoom 1 576 * 432
 								
-									var image= L.imageOverlay("/images/posters/2024 AbSciCon Poster v2.png", [[0,0],[360,480]]); //initial size at zoom 1 )
+									var image= L.imageOverlay("/images/posters/2024 AbSciCon Poster v8.png", [[0,0],[360,480]]); //initial size at zoom 1 )
 									image.addTo(map);
 									// tell leaflet that the map is exactly as big as the image
 									map.setMaxBounds(new L.LatLngBounds([0,0], [360,480]));  // prevent panning outside the image area.
@@ -231,6 +283,67 @@
 								</ul>
 							</article>
 
+
+
+
+
+						<!-- Gallery -->
+						<article id="gallery" style="width:1200px">
+								<div class="demo">
+									<div class="item">            
+										<div class="clearfix" style="max-width:474px;">
+											<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-2.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-2.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-3.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-3.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-4.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-5.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-5.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-6.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-6.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-7.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-7.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-8.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-8.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-9.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-9.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-10.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-10.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-11.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-11.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-12.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-12.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-13.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-13.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-14.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-14.jpg" />
+													 </li>
+												<li data-thumb="img/thumb/cS-15.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-15.jpg" />
+													 </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+						</article>
 						<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
