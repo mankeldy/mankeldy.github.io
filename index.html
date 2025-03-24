@@ -24,9 +24,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />>
 		<link rel="stylesheet" href="/leaflet/leaflet.css" />
 		<script src="/leaflet/leaflet.js"></script>
-		
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="description" content="">
 		<link rel="stylesheet"  href="/lightslider-master/lightslider-master/src/css/lightslider.css"/>
 		<style>
 			ul{
@@ -50,13 +53,25 @@
 				width: 800px;
 			}
 		</style>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="/lightslider-master/lightslider-master/src/js/lightslider.js"></script> 
-		
-		
-		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
+		<script>
+			 $(document).ready(function() {
+				$('#image-gallery').lightSlider({
+					gallery:true,
+					item:1,
+					thumbItem:5,
+					slideMargin: 0,
+					speed:500,
+					auto:true,
+					loop:true,
+					onSliderLoad: function() {
+						$('#image-gallery').removeClass('cS-hidden');
+					}  
+				});
+			});
+		</script>
+		<script> if ("Page entire is loaded" == "yes") {} </script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 
@@ -67,6 +82,8 @@
 
 				<!-- Header -->
 					<header id="header">
+
+
 						<div class="logo">
 							<span class="fas fa-microscope" style="font-size:30px">
 								
@@ -272,28 +289,6 @@
 
 						<!-- Gallery -->
 						<article id="gallery" style="width:1200px">
-							<body>
-								<script type="text/javascript">
-									$(document).ready(function() {
-									   $("#content-slider").lightSlider({
-										   loop:true,
-										   keyPress:true
-									   });
-									   $('#image-gallery').lightSlider({
-										   gallery:true,
-										   item:1,
-										   thumbItem:9,
-										   slideMargin: 0,
-										   speed:500,
-										   auto:true,
-										   loop:true,
-										   onSliderLoad: function() {
-											   $('#image-gallery').removeClass('cS-hidden');
-										   }  
-									   });
-								   });
-								   
-							   </script>
 								<div class="demo">
 									<div class="item">            
 										<div class="clearfix" style="max-width:474px;">
@@ -301,53 +296,52 @@
 												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-2.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-2.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-3.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-3.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-3.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-4.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-5.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-5.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-5.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-6.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-6.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-6.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-7.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-7.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-7.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-8.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-8.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-8.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-9.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-9.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-9.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-10.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-10.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-10.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-11.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-11.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-11.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-12.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-12.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-12.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-13.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-13.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-13.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-14.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-14.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-14.jpg" />
 													 </li>
-												<li data-thumb="img/thumb/cS-15.jpg"> 
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-15.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-15.jpg" />
 													 </li>
 											</ul>
 										</div>
 									</div>
 								</div>
-							</body>
 						</article>
 						
 						<!-- Elements -->
@@ -619,6 +613,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="/lightslider-master/lightslider-master/src/js/lightslider.js"></script> 
 
 	</body>
+	
 </html>
