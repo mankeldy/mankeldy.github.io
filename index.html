@@ -55,23 +55,6 @@
 		</style>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-		<script>
-			 $(document).ready(function() {
-				$('#image-gallery').lightSlider({
-					gallery:true,
-					item:1,
-					thumbItem:5,
-					slideMargin: 0,
-					speed:500,
-					auto:true,
-					loop:true,
-					onSliderLoad: function() {
-						$('#image-gallery').removeClass('cS-hidden');
-					}  
-				});
-			});
-		</script>
-		<script> if ("Page entire is loaded" == "yes") {} </script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 
@@ -288,11 +271,65 @@
 
 
 						<!-- Gallery -->
-						<article id="gallery" style="width:1200px">
+						<article id="gallery" class="gallery-is-on" style="width:1200px">
+							WORK IN PROGRESS, NOTHING TO SEE HERE
+							<div class="demo">
+									<div class="slider-wrapper">            
+										<div class="slider-container" style="max-width:474px;">
+											<ul id="slider1" class="slider gallery list-unstyled cS-hidden">
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-2.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-3.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-3.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-5.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-5.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-6.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-6.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-7.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-7.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-8.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-8.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-9.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-9.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-10.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-10.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-11.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-11.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-12.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-12.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-13.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-13.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-14.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-14.jpg" />
+													 </li>
+												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-15.jpg"> 
+													<img src="/lightslider-master/lightslider-master/demo/img/cS-15.jpg" />
+													 </li>
+											</ul>
+										</div>
+									</div>
+								</div>
 								<div class="demo">
-									<div class="item">            
-										<div class="clearfix" style="max-width:474px;">
-											<ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+									<div class="slider-wrapper">            
+										<div class="slider-container" style="max-width:474px;">
+											<ul id="slider2" class="slider gallery list-unstyled cS-hidden">
 												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
 													 </li>
@@ -614,7 +651,48 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="/lightslider-master/lightslider-master/src/js/lightslider.js"></script> 
+			
+			<!-- LightSlider initialization script -->
+			<script>
+				    $(document).ready(function() {
+        // Select all sliders on the page
+        const sliders = document.querySelectorAll('.slider');
 
-	</body>
+        // Create an Intersection Observer for each slider
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Initialize the LightSlider when the slider comes into view
+                    $(entry.target).lightSlider({
+						gallery:true,
+                        item: 1,
+                        loop: true,
+                        slideMove: 1,
+                        speed: 600,
+                        auto: true,
+                        pause: 4000,
+                        controls: true,
+                        pager: true,
+						onSliderLoad: function() {
+							$(entry.target).removeClass('cS-hidden');
+						}
+                    });
+
+                    // Stop observing the slider after it's been initialized
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5 // The slider must be at least 50% visible to trigger the observer
+        });
+
+        // Observe each slider element
+        sliders.forEach(slider => {
+            observer.observe(slider);
+        });
+    });
+		   </script>
+	
+		</body>
 	
 </html>
