@@ -20,24 +20,38 @@
 .slider-map-container iframe {
   flex: 1; /* Allow iframe to take up available space */
   max-width: 100%; /* Ensure it stays responsive */
-  min-width: 300px;
   min-height: 350px;
-  height: auto; /* Adjust height proportionally to the width */
   object-fit: contain; /* Prevent the image from being cut off */
 }
 
-.splide__slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.splide__slide {
+.splide__slide img {
   opacity: 0.6;
+  max-width: 100%; /* Ensure it stays responsive */
+  height:auto;
+  object-fit: contain;
 }
 
 .splide-gallery {
   min-width: 300px;
-  height:auto
+  height:auto;
+  object-fit: contain;
 
 }
+
+.main-gallery .splide__track{
+  max-width: 100%;
+  border-radius: 20px;
+  height:auto;
+  object-fit: contain;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+

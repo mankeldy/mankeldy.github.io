@@ -261,7 +261,7 @@
 							<div class="slider-map-container">
 								<iframe width="475" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=38.62147, -123.13351&hl=en&z=6&output=embed&markers=38.62147, -123.13351&t=k"></iframe>
 							<div class="splide-gallery">
-								<section id="main-gallery-1" class="splide" aria-label="My Awesome Gallery">
+								<section id="main-gallery-1" class="splide main-gallery" aria-label="My Awesome Gallery">
 									<div class="splide__track">
 									  <ul class="splide__list">
 										<li class="splide__slide">
@@ -282,7 +282,7 @@
 								  
 									<section
 									id="thumbnail-carousel-1"
-									class="splide"
+									class="splide thumbnail-gallery"
 									aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
 								  >
 									<div class="splide__track">
@@ -304,8 +304,8 @@
 								  </section>					
 							</div>
 						</div>
-
-							<section id="main-gallery-2" class="splide" aria-label="My Awesome Gallery">
+						<hr/>
+							<section id="main-gallery-2" class="splide main-gallery" aria-label="My Awesome Gallery">
 								<div class="splide__track">
 								  <ul class="splide__list">
 									<li class="splide__slide">
@@ -324,9 +324,10 @@
 								</div>
 							  </section>
 							  
+					
 								<section
 								id="thumbnail-carousel-2"
-								class="splide"
+								class="splide thumbnail-gallery"
 								aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
 							  >
 								<div class="splide__track">
@@ -635,7 +636,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		pagination: false,
 		cover: true,
 		type:'fade',
-		arrows:false
+		arrows:false,
 	  });
 
 
