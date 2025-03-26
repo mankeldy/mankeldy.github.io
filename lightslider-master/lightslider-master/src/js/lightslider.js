@@ -268,6 +268,7 @@
                                 }
                             }
                             /**/
+                            
                             for (var n = $el.find('.clone.right').length; n < tItem; n++) {
                                 $el.find('.lslide').eq(n).clone().removeClass('lslide').addClass('clone right').appendTo($el);
                                 scene++;
@@ -1137,4 +1138,5 @@
         });
         return this;
     };
+    
 }(jQuery));
