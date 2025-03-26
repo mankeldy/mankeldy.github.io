@@ -20,7 +20,7 @@
 		<title>Dylan's Personal Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/shared_syles.css" />
+		<link rel="stylesheet" href="assets/css/syles.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />>
 		<link rel="stylesheet" href="/leaflet/leaflet.css" />
 		<script src="/leaflet/leaflet.js"></script>
@@ -31,28 +31,6 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="description" content="">
 		<link rel="stylesheet"  href="/lightslider-master/lightslider-master/src/css/lightslider.css"/>
-		<style>
-			ul{
-				list-style: none outside none;
-				padding-left: 0;
-				margin: 0;
-			}
-			.demo .item{
-				margin-bottom: 60px;
-			}
-			.content-slider li{
-				background-color: #ed3020;
-				text-align: center;
-				color: #FFF;
-			}
-			.content-slider h3 {
-				margin: 0;
-				padding: 70px 0;
-			}
-			.demo{
-				width: 800px;
-			}
-		</style>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -271,66 +249,78 @@
 
 
 						<!-- Gallery -->
-						<article id="gallery" class="gallery-is-on" style="width:1200px">
-							WORK IN PROGRESS, NOTHING TO SEE HERE
-							<div class="demo">
-									<div class="slider-wrapper">            
-										<div class="slider-container" style="max-width:474px;">
-											<ul id="slider1" class="slider gallery list-unstyled cS-hidden">
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-2.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-3.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-3.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-5.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-5.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-6.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-6.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-7.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-7.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-8.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-8.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-9.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-9.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-10.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-10.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-11.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-11.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-12.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-12.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-13.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-13.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-14.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-14.jpg" />
-													 </li>
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-15.jpg"> 
-													<img src="/lightslider-master/lightslider-master/demo/img/cS-15.jpg" />
-													 </li>
-											</ul>
+						<article id="gallery" style="width:1200px">
+							<!-- Text content (before the slider) -->
+							<div class="text-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+							</div>
+				
+							<!-- Container for slider and map -->
+							<div class="slider-map-container">
+								<iframe width="475" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=38.62147, -123.13351&hl=en&z=6&output=embed&markers=38.62147, -123.13351&t=k"></iframe>
+										<div class="slider-wrapper">            
+											<div class="slider-container" style="max-width:475px;">
+													<div class="slider-section">
+																<ul id="slider1" class="slider gallery list-unstyled cS-hidden">
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-2.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-3.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-3.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-5.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-5.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-6.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-6.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-7.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-7.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-8.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-8.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-9.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-9.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-10.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-10.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-11.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-11.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-12.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-12.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-13.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-13.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-14.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-14.jpg" />
+																		</li>
+																	<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-15.jpg"> 
+																		<img src="/lightslider-master/lightslider-master/demo/img/cS-15.jpg" />
+																		</li>
+																</ul>
+													</div>
+												</div>
 										</div>
 									</div>
-								</div>
-								<div class="demo">
+								<div class="demo" >
 									<div class="slider-wrapper">            
-										<div class="slider-container" style="max-width:474px;">
-											<ul id="slider2" class="slider gallery list-unstyled cS-hidden">
-												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
+										<div class="slider-container">
+											<ul id="slider2"  class="slider gallery list-unstyled cS-hidden">
+												<li  data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-1.jpg"> 
 													<img src="/lightslider-master/lightslider-master/demo/img/cS-1.jpg" />
 													 </li>
 												<li data-thumb="/lightslider-master/lightslider-master/demo/img/thumb/cS-2.jpg"> 
@@ -673,6 +663,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                         pause: 4000,
                         controls: true,
                         pager: true,
+						thumbItem:8,
+						thumbMargin:1,
 						onSliderLoad: function() {
 							$(entry.target).removeClass('cS-hidden');
 						}

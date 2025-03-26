@@ -1,0 +1,72 @@
+article {
+    width: 100%;              /* Full width */
+    max-width: 1200px;        /* Optional: You can set a max-width to constrain it */
+    margin: 0 auto;           /* Center the article on the page */
+    padding: 20px;            /* Optional: Add padding around the content */
+  }
+
+
+.text-content {
+    text-align: right; /* Left align the text content */
+    margin-bottom: 20px; /* Add some space below the text */
+    width: 100%; /* Ensure the text section takes up the full width */
+  }  
+
+/* Flexbox layout for the slider and map container */
+.slider-map-container {
+    display: flex;            /* Enable Flexbox for alignment */
+    justify-content: center;  /* Horizontally center items */
+    align-items: center;      /* Vertically center items */
+    gap: 20px;                /* Optional: Add space between items */
+    flex-wrap: wrap;          /* Allow items to wrap on small screens */
+    width: 100%;              /* Ensure the container takes up the full width */
+    max-width: 1200px;        /* Optional: Optional max-width for the container */
+    margin: 0 auto;           /* Center the container within the article */
+    box-sizing: border-box;   /* Ensure padding and borders don't affect the container's size */
+  }
+  
+  /* Style for the iframe (map) */
+  .slider-map-container iframe {
+    flex: 1; /* Allow iframe to take up available space */
+    max-width: 100%; /* Ensure it stays responsive */
+    min-width: 200px;
+    min-height: 350px;
+    height: auto; /* Adjust height proportionally to the width */
+    object-fit: contain; /* Prevent the image from being cut off */
+}
+  
+  /* Style for the slider */
+  .slider-map-container .slider-wrapper {
+    flex: 1; /* Allow the slider to take up available space */
+    max-width: 100%; /* Ensure the slider stays responsive */
+
+}
+.slider-container{
+    align-items: center; /* Align items at the start of the container */
+    justify-content: center; /* Center the items horizontally */
+}
+.lslide img {
+    flex: 1;
+    width: 100%;  /* Full width */
+    height: auto;       /* Ensure the aspect ratio is maintained */
+    object-fit: contain; /* Prevent the image from being cut off */
+}
+
+  /* Make sure it doesn't overflow on smaller screens */
+  
+  
+  @media (max-width: 1000px) {
+    .slider-map-container {
+        flex:1;
+      flex-direction: column; /* Stack items vertically on small screens */
+      justify-content: center; /* Center the items horizontally */
+      align-items: center; /* Center the items vertically */
+    }
+    .slider-map-container iframe {
+        flex: 1; /* Allow iframe to take up available space */
+        max-width: 100%; /* Ensure it stays responsive */
+        min-height: 300px;
+        height: auto; /* Adjust height proportionally to the width */
+        object-fit: contain; /* Prevent the image from being cut off */
+    }
+  }
