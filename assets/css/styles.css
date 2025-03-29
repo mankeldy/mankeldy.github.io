@@ -122,7 +122,7 @@ hr {
 @media screen and (max-width: 736px) {
 
   .slider-map-container .map {
-    min-height: 300px;
+    min-height: 375px;
   }
 
 }
@@ -130,6 +130,6 @@ hr {
 
 @media screen and (max-width: 480px) {
   .slider-map-container .map {
-    min-height: 200px;
+    min-height: 275px;
   }
 }
