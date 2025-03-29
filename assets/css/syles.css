@@ -27,23 +27,36 @@
 
 .splide__slide img {
   opacity: 0.6;
-  max-width: 100%; /* Ensure it stays responsive */
+  width: 100%; /* Ensure it stays responsive */
   height:auto;
   object-fit: contain;
+  border-radius: 10px;
 }
 
-.splide-gallery {
-  min-width: 300px;
-  height:auto;
-  object-fit: contain;
-
+.splide__slide.is-active img{
+  opacity: 1;
 }
 
-.main-gallery .splide__track{
-  max-width: 100%;
-  border-radius: 20px;
+.splide .main-gallery{
   height:auto;
+}
+
+.splide-gallery{
+  width: 100%; /* Ensure it stays responsive */
+  max-width: 500px;
+  height:auto !important;
   object-fit: contain;
+  justify-content: center;
+}
+.splide__slide{
+  background-size: contain !important;
+  padding: 0px;
+}
+
+.splide__arrows{
+  width: 100%;
+  height: auto;
+  width: fit-content; /* Adapts to image size */
 }
 
 hr {
@@ -55,3 +68,18 @@ hr {
   padding: 0;
 }
 
+
+
+.main-gallery .splide__track{
+  border-radius: 20px;
+}
+
+.splide.thumbnail-gallery{
+  width: 80%;
+}
+
+
+.thumbnail-gallery {
+  width: 80%;  /* Reducing the thumbnail slider by 80% */
+  margin: 0 auto;  /* Center it within the splide-gallery */
+}

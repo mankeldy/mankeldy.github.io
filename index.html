@@ -259,8 +259,8 @@
 				
 							<!-- Container for slider and map -->
 							<div class="slider-map-container">
-								<iframe width="475" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=38.62147, -123.13351&hl=en&z=6&output=embed&markers=38.62147, -123.13351&t=k"></iframe>
-							<div class="splide-gallery">
+								<iframe width="475px" height="430" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=38.62147, -123.13351&hl=en&z=6&output=embed&markers=38.62147, -123.13351&t=k"></iframe>
+							<div class="splide-gallery" >
 								<section id="main-gallery-1" class="splide main-gallery" aria-label="My Awesome Gallery">
 									<div class="splide__track">
 									  <ul class="splide__list">
@@ -276,10 +276,25 @@
 										<li class="splide__slide">
 										  <img src="/lightslider-master/lightslider-master/demo/img/cS-4.jpg" alt="">
 										</li>
+										<li class="splide__slide">
+											<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+										</li>
+										<li class="splide__slide">
+											<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+										</li>
+										<li class="splide__slide">
+											<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+										</li>
+										<li class="splide__slide">
+											<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+										</li>
+										<li class="splide__slide">
+											<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+										</li>
 									  </ul>
 									</div>
 								  </section>
-								  
+								
 									<section
 									id="thumbnail-carousel-1"
 									class="splide thumbnail-gallery"
@@ -298,6 +313,21 @@
 											  </li>
 											  <li class="splide__slide">
 												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+											  </li>
+											  <li class="splide__slide">
+												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+											</li>
+											<li class="splide__slide">
+												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+											</li>
+											<li class="splide__slide">
+												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+											</li>
+											<li class="splide__slide">
+												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
+											</li>
+											<li class="splide__slide">
+												<img src="/lightslider-master/lightslider-master/demo/img/thumb/cS-4.jpg" alt="">
 											</li>
 										  </ul>
 									</div>
@@ -305,6 +335,8 @@
 							</div>
 						</div>
 						<hr/>
+
+						<div class="splide-gallery">
 							<section id="main-gallery-2" class="splide main-gallery" aria-label="My Awesome Gallery">
 								<div class="splide__track">
 								  <ul class="splide__list">
@@ -347,7 +379,7 @@
 									  </ul>
 								</div>
 							  </section>
-							
+							</div>
 
 						</article>
 						
@@ -631,22 +663,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	var style = document.createElement('style');
 		document.addEventListener( 'DOMContentLoaded', function () {
 	  var main = new Splide(mainSliderId, {
-		width: 600,
-		height: 300,
 		pagination: false,
-		cover: true,
 		type:'fade',
 		arrows:false,
+		contain: true
 	  });
 
 
 	  var thumbnails = new Splide( thumbnailsId, {
-    fixedWidth  : 100,
-    fixedHeight : 60,
+		fixedWidth: 80, // Adjust thumbnail width
     gap         : 10,
     rewind      : true,
     pagination  : false,
     isNavigation: true,
+	focus      : 'center',
+	breakpoints: {
+    768: { // For smaller screens
+      fixedWidth: 70,
+      fixedHeight: 60,
+      gap: 5,
+    },
+    480: { // For even smaller screens
+      fixedWidth: 60,
+      fixedHeight: 50,
+      gap: 3,
+    }
+  }
   } );
 
   main.sync( thumbnails );
