@@ -17,11 +17,12 @@
 }
 
 /* Style for the iframe (map) */
-.slider-map-container iframe {
+.slider-map-container .map {
   flex: 1; /* Allow iframe to take up available space */
   max-width: 100%; /* Ensure it stays responsive */
-  min-height: 350px;
+  min-height: 430px;
   object-fit: contain; /* Prevent the image from being cut off */
+  border-radius: 20px;
 }
 
 
@@ -82,4 +83,53 @@ hr {
 .thumbnail-gallery {
   width: 80%;  /* Reducing the thumbnail slider by 80% */
   margin: 0 auto;  /* Center it within the splide-gallery */
+}
+
+
+.youtube-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 20px;
+}
+
+.youtube-container {
+  position: relative;
+  padding-top: 56.25%;  /* Maintain a 16:9 aspect ratio */
+}
+
+
+.yotube-and-gallery .splide-gallery {
+  max-width: 100%;  /* Ensure it doesn't exceed 35% */
+  margin: 0 auto;
+}
+
+.yotube-and-gallery{
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* These changes will make the image adjust to the window size */
+  height: auto; /* These changes will make the image adjust to the window size */
+  max-width: 500px; /* These changes will make the image adjust to the window size, with this max size */
+  flex-wrap: wrap;  /* Allow elements to wrap to the next line */
+  justify-content: center;  /* Center-align the items */
+  gap: 10px;  /* Space between YouTube iframe and gallery */
+
+}
+
+@media screen and (max-width: 736px) {
+
+  .slider-map-container .map {
+    min-height: 300px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .slider-map-container .map {
+    min-height: 200px;
+  }
 }
