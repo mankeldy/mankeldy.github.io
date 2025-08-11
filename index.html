@@ -133,6 +133,15 @@
 							<h2 class="major">Presentations</h2>
 							<ol>
 								<li>
+									<b>Mankel, D.</b>, Anderson, R., Marlow, J. (2025, August 4-7) Microbial Community Composition, Metabolic Potential, and Diversity within the Active Vents of the Mid-Cayman Rise [Poster presentation]. Seventh Workshop on Trait-based Approaches to Ocean Life 2025, Monterey, CA, United States.
+								</li>
+								<li>
+									<b>Mankel, D.</b> (2024, May 12). Microbial Community Composition, Metabolic Potential, and Diversity Within the Active Vents of the Mid-Cayman Rise. [Oral presentation] Biogeoscience Symposium. Boston University, Boston, MA, United States.
+								</li>
+								<li>
+									<b>Mankel, D.</b> (2024, Nov 6). Assessing the Limits of Life at pH and Temperature Extremes in Extraterrestrial Analog Environments. [Oral presentation] EBE-MB Department Chalk Talk Seminar series. Boston University, Boston, MA, United States.
+								</li>
+								<li>
 									<b>Mankel, D.</b> (2024, May 24) Using Microbes from Extreme Environment Analogs to Grow Bioplastics on Mars [Oral presentation]. Hariri FRP Symposium - <i>First Trip to Mars: How to Pack Light</i>, Boston, MA, United States.
 								</li>
 								<li>
@@ -156,16 +165,17 @@
 							</ol>
 
 							<h2 class="major">Posters</h2>
+							<li> Presented at the Seventh Workshop on Trait-based Approaches to Ocean Life
+								<div id="traitworkshop2025" style="width: 1200; height: 400px;" ></div>
+							</li>
 							<li> Presented at AbSciCon2024
-
-
-							<body class>
-								
-								<div id="map" style="width: 1200; height: 400px;" ></div>
+								<div id="absicon2024" style="width: 1200; height: 400px;" ></div>
+							</li>
 
 								<script>
+									function createPosterMap(posterID, imageUrl){
 									// Using leaflet.js to pan and zoom a big image.
-									var map = L.map('map', {
+									var map = L.map(posterID, {
 									minZoom: 0,
 									maxZoom: 4,
 									center: [0, 0],
@@ -184,22 +194,17 @@
 									//zoom 2 1152 * 864
 									//zoom 1 576 * 432
 								
-									var image= L.imageOverlay("/images/posters/2024 AbSciCon Poster v8.png", [[0,0],[360,480]]); //initial size at zoom 1 )
+									var image= L.imageOverlay(imageUrl, [[0,0],[360,480]]); //initial size at zoom 1 )
 									image.addTo(map);
 									// tell leaflet that the map is exactly as big as the image
 									map.setMaxBounds(new L.LatLngBounds([0,0], [360,480]));  // prevent panning outside the image area.
 									//Note the viscosity setting keeps the image from being dragged outside this 
-																			
-								</script>
-									
-
-
-
-
-							</body>
-						</li>
-
-						
+								}				
+								
+								createPosterMap('traitworkshop2025', '/images/posters/2025 Trait Based Workshop Poster - finished.png');
+								createPosterMap('absicon2024', '/images/posters/2024 AbSciCon Poster v8.png');
+								
+								</script>		
 
 							
 
