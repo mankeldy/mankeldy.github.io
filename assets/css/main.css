@@ -2126,7 +2126,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 630px) {
 
 			.items.style1.big > *:nth-child(-n + 2) {
 				border-top-width: 1px;
